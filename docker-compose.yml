@@ -1,0 +1,11 @@
+version: "3.3"
+services:
+  duckdns:
+    image: linuxserver/duckdns:arm32v7-latest
+    container_name: duckdns
+    environment:
+      - TZ=America/Argentina/Buenos_Aires
+      - SUBDOMAINS=xxxx
+      - TOKEN=xxxxxx
+      - LOG_FILE=false #optional
+    restart: always
